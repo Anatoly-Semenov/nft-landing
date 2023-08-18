@@ -1,0 +1,35 @@
+version: "3"
+services:
+  sg-ui-fortnite-prod:
+    container_name: sg-ui-fortnite-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - sg-network
+    environment:
+      NUXT_HOST: 0.0.0.0
+      NUXT_PORT: 3001
+      BASE_API_URL:
+    ports:
+      - 3001:3001
+
+  sg-ui-fortnite-dev:
+    container_name: sg-ui-fortnite-dev
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    volumes:
+      - '.:/usr/src/app'
+    networks:
+      - sg-network
+    environment:
+      NUXT_HOST: 0.0.0.0
+      NUXT_PORT: 2000
+      BASE_API_URL: http://sg-api:3000/
+    ports:
+      - 2000:2000
+
+networks:
+  sg-network:
+    external: true
