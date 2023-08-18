@@ -1,0 +1,101 @@
+.ui-button
+	display flex
+	align-items center
+	justify-content center
+	height 40px
+	transition background-color $transition
+	padding 13px 15px
+	border none
+	border-radius 6px
+	text-shadow none
+
+	&:hover
+		background-color $color-ui-hover
+
+	&.ant-btn.ant-btn-primary
+		transition-property box-shadow, background-color, background, color
+		transition-duration 0.4s
+		transition-timing-function ease
+		transition-delay 0s
+		background-color $color-ui
+		color $color-text
+		box-shadow 2px 5px 11px rgba(72, 102, 162, 0.07)
+
+		&:focus
+			background-color $color-ui
+			border-color $color-ui
+
+		&:hover
+			background-color $color-ui-hover
+			border-color $color-ui-hover
+
+	&.ant-btn.ant-btn-default
+		color $color-text
+		background transparent
+		border-color $color-ui
+		transition color $transition
+
+		&:hover
+			color $color-ui
+			border-color $color-ui-hover
+
+	& svg
+		margin-right $padding
+
+	&._small
+		height 32px
+		width fit-content
+		min-width 90px
+		border-radius 10px
+
+	&._medium
+		width fit-content
+		min-width 123px
+		height 39px
+		border-radius 7px
+
+	&._middle
+		min-width 100px
+		height 40px
+		padding 0 20px
+
+		& span
+			font-size 14px
+
+	&._large
+		padding 10px $padding
+		height 40px
+		min-width 150px
+
+	&.ant-btn.ant-btn-primary
+		&._highlight
+			background-color $color-highlight
+			color $color-background
+
+		&._gradient
+			background $gradient-ui
+			box-shadow $box-shadow-ui
+
+			&:hover
+				background $color-ui
+				box-shadow $box-shadow-ui-hover
+
+		&._gradient._highlight
+			background $gradient-highlight
+			box-shadow $box-shadow-highlight
+
+			&:hover
+				background $color-highlight
+				box-shadow $box-shadow-highlight-hover
+
+			&:active
+				color $color-highlight-active
+
+		&._unauthorized, &._unauthorized._highlight, &._unauthorized._gradient, &._unauthorized:hover, &._unauthorized._highlight:hover, &._unauthorized._gradient:hover
+			background transparent
+			border $border
+			color $color-border
+			box-shadow none
+
+		&._unauthorized._gradient
+			background linear-gradient(110.36deg, rgba(45, 48, 80, 0.3) 8.46%, rgba(45, 48, 80, 0.009375) 55.65%)

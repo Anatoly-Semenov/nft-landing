@@ -1,0 +1,63 @@
+.profile
+	width 100%
+	display flex
+	flex-direction column
+
+	&__info-name, &__achievements-title
+		font-size 48px
+		font-weight 600
+		color $color-text
+
+	&__achievements-subtitle, &__game-name, &__games-subtitle
+		font-size 18px
+		color $color-text-light
+		margin-top 2px
+
+	&__info
+		display flex
+		justify-content flex-start
+		align-items flex-start
+
+		&-name
+			margin-left $padding
+
+
+	&__social
+		display flex
+		margin-top $padding
+
+		& .ui-connect:not(:first-child)
+			margin-left $padding
+
+	&__achievements, &__games
+		display flex
+		flex-direction column
+		justify-content flex-start
+		align-items flex-start
+		margin-top 100px
+
+	&__achievements-list, &__games-list
+		margin-top 50px
+		width 100%
+		display flex
+		flex-wrap wrap
+		justify-content flex-start
+		row-gap 50px
+		column-gap $padding-big
+
+	&__game
+		flex-center()
+		flex-direction column
+		width 140px
+
+		&-img
+			width 100%
+			opacity .85
+			filter contrast(0.8)
+			pointer-events none
+			user-select none
+
+		&-name
+			margin-top 10px
+			font-size 14px
+

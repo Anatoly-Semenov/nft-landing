@@ -1,0 +1,30 @@
+.privacy
+	width 100%
+	display flex
+	flex-direction column
+	justify-content center
+
+	&__title
+		font-size 30px
+		font-weight 900
+		color $color-text
+		margin-bottom $padding-big
+		text-align center
+
+	&__content
+		color $color-background-dark
+		background-color $color-text
+		padding 60px
+		border-radius 20px
+
+		& *
+			color $color-background-dark
+
+		& li:not(:first-child)
+			margin-top $padding-small
+
+		& ul
+			margin-bottom $padding
+
+		& a
+			color $color-link

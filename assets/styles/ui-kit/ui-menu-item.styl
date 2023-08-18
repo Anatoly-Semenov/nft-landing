@@ -1,0 +1,29 @@
+.ui-menu-item
+	display flex
+	justify-content flex-start
+	align-items center
+	height 45px
+	padding 0 15px
+	color $color-text
+	transition background-color $transition
+	border-radius 4px
+
+	&:first-child
+		padding-top 0
+
+	&:last-child
+		padding-bottom 0
+		border-bottom none
+
+	& svg
+		margin-right 20px
+
+	& a
+		color $color-text
+
+	&:hover
+		background-color $color-ui-hover
+		cursor pointer
+
+	&:active
+		background-color $color-ui-active

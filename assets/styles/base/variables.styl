@@ -1,0 +1,84 @@
+// Переменные цветовой-палитры STYLUS
+$color-ui = var(--color-ui)
+$color-ui-hover = var(--color-ui-hover)
+$color-ui-active = var(--color-ui-active)
+$color-ui-shadow = var(--color-ui-shadow)
+$color-highlight = var(--color-highlight)
+$color-highlight-hover = var(--color-highlight-hover)
+$color-highlight-active = var(--color-highlight-active)
+$color-highlight-shadow = var(--color-highlight-shadow)
+$color-link = var(--color-link)
+$color-link-hover = var(--color-link-hover)
+$color-text = var(--color-text)
+$color-text-light = var(--color-text-light)
+$color-text-dark = var(--color-text-dark)
+$color-border = var(--color-border)
+$color-loading = var(--color-loading)
+$color-background = var(--color-background)
+$color-background-light = var(--color-background-light)
+$color-background-dark = var(--color-background-dark)
+$color-error = var(--color-error)
+
+// тени
+$box-shadow = 0px 12px 24px rgba(0, 0, 0, 0.06)
+$box-shadow-ui = 0px 12px 25px $color-ui-shadow
+$box-shadow-ui-hover = 0px 5px 10px $color-ui-shadow
+$box-shadow-highlight = 0px 12px 25px $color-highlight-shadow
+$box-shadow-highlight-hover = 0px 5px 10px $color-highlight-shadow
+
+// Градиенты
+$gradient-ui = linear-gradient(110.36deg, rgba(250, 255, 242, 0.2) 8.46%, rgba(247, 241, 255, 0.00625) 55.65%), $color-ui
+$gradient-highlight = linear-gradient(110.36deg, rgba(250, 255, 242, 0.2) 8.46%, rgba(247, 241, 255, 0.00625) 55.65%), $color-highlight
+
+// Закругления
+$border-radius = 12px
+$border-radius-small = 6px
+$border-radius-circle = 1000px
+
+// Обводка
+$border = 1px solid $color-border
+
+// Отступы
+$padding = 20px
+$padding-small = 10px
+$padding-big = 30px
+
+// Шрифты
+$font-text = "SF Pro Display"
+
+// Переходы
+$transition = 0.4s ease
+
+// Высота строки
+$line-height = 22px
+$line-height-small = 17px
+
+// Непрозрачность
+$opacity-hover = .7
+
+// Animations
+$animation-heart = heart 6s infinite linear
+
+// Переменные цветовой-палитры CSS
+:root
+	--color-ui #4D1DB2
+	--color-ui-hover #6621F8
+	--color-ui-active #5111DA
+	--color-ui-shadow #4D1DB233
+	--color-highlight #AADC57
+	--color-highlight-hover #D6FF93
+	--color-highlight-active #4F7E01
+	--color-highlight-shadow #AADC5733
+	--color-link #9290FE
+	--color-link-hover #6B68FF
+	--color-text #FFFFFF
+	--color-text-light #A2A3AD
+	--color-text-dark #B6B6B6
+	--color-border #2D3050
+	--color-loading #222549
+	--color-background #14162B
+	--color-background-light #161832
+	--color-background-dark #0A0C1B
+	--color-error #C73953
+	// Ant Design
+	--antd-wave-shadow-color var(--color-ui)

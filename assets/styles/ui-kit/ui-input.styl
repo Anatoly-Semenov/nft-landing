@@ -1,0 +1,21 @@
+.ui-input
+	& .ant-input
+		background-color $color-background
+		color $color-text
+		border-color #2D3050
+		padding-bottom 16px
+		padding-top 16px
+
+		&:focus
+			box-shadow none
+
+		&-affix-wrapper
+			&:hover .ant-input:not(.ant-input-disabled)
+				border-color #595C7A
+
+		&-prefix i
+			color $color-text-light !important // Reset base color
+
+	&__title
+		color $color-text-dark
+		font-size 12px

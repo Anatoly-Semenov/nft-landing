@@ -1,0 +1,46 @@
+@media screen and (max-width: 880px)
+	.index
+		&__rewards-list, & .nft__items
+			overflow-x auto
+			custom-scrollbar()
+
+		&__rewards-list
+			padding-bottom $padding
+
+		& .nft__items
+			padding-bottom $padding-big
+
+		&__reward, &__reward._big
+			min-width 200px
+			max-width 200px
+
+		&__reward:not(:last-child)
+			margin-right $padding-big
+
+		& .nft__items
+			flex-wrap nowrap
+			justify-content flex-start
+			width 100%
+			padding-bottom 40px
+
+		&__building-list
+			flex-direction column
+			justify-content center
+			align-items center
+
+		&__building
+			&-description
+				text-align center
+
+			&-item
+				align-items center
+
+				&:not(:last-child)
+					margin-bottom $padding-big
+
+		&__soon
+			&-names
+				display none
+
+			&-list
+				margin-top $padding
