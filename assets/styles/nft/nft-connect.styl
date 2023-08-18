@@ -1,0 +1,37 @@
+.nft__connect
+	display flex
+	flex-direction column
+	width 100%
+	padding $padding
+	border-radius $border-radius
+	border $border
+	margin-top 50px
+
+	&-title
+		color $color-text
+		font-size 20px
+		font-weight 600
+		margin-bottom $padding-big
+
+	&-list
+		display flex
+		flex-direction column
+
+	&-item
+		display flex
+		justify-content space-between
+		align-items center
+
+		&:not(:first-child)
+			margin-top $padding-big
+
+	&-text
+		font-size 18px
+		transition color $transition
+		color $color-text
+
+		& i
+			margin-right 15px
+
+	&-item._connected &-text
+		color $color-highlight

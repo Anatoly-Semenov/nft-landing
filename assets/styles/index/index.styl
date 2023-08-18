@@ -1,0 +1,180 @@
+.index
+	width 100%
+	display flex
+	flex-direction column
+	align-items center
+
+	&__title, &__subtitle
+		text-align center
+
+	&__title
+		font-size 48px
+		font-weight 600
+		line-height 40px
+
+	&__subtitle
+		margin-top $padding
+		color $color-text-light
+		font-size 18px
+
+	&__soon-title, &__building-title, &__rewards-title, &__about-title, &__footer-title
+		font-size 24px
+		font-weight 600
+		color $color-text
+		text-align center
+
+	&__soon
+		display flex
+		flex-direction column
+		margin-top 100px
+
+		&-names
+			flex-center()
+			margin-top $padding-small
+			margin-bottom $padding-big
+
+		&-name
+			color $color-text-light
+			font-size 14px
+
+			&:not(:last-child)
+				margin-right $padding-big
+
+		&-list
+			display flex
+			justify-content center
+			align-items center
+
+		&-item
+			height 109px
+			border-radius $border-radius
+			pointer-events none
+
+			&:not(:last-child)
+				margin-right $padding-big
+
+	&__building, &__rewards
+		max-width 1000px
+		width 100%
+
+	&__building
+		flex-center()
+		flex-direction column
+		margin-top 100px
+
+		&-title
+			color $color-highlight
+			text-align center
+			max-width 445px
+
+		&-list
+			width 100%
+			display flex
+			justify-content space-between
+			align-items center
+			margin-top $padding-big
+
+		&-item
+			display flex
+			flex-direction column
+			justify-content flex-start
+			align-items flex-start
+			min-width 250px
+			max-width 250px
+
+		&-subtitle
+			border 1px solid $color-highlight
+			color $color-highlight
+			font-size 18px
+			padding 4px 20px
+			margin-bottom 12px
+			border-radius $border-radius-circle
+
+		&-description
+			font-size 18px
+
+	&__rewards
+		display flex
+		flex-direction column
+		align-items center
+		margin-top 100px
+
+		&-title
+			max-width 240px
+
+		&-list
+			width 100%
+			display flex
+			justify-content space-between
+			align-items flex-end
+			margin-top $padding-big
+
+	&__reward
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		width 235px
+
+		&._big
+			width 292px
+
+		&-img
+			width 100%
+			pointer-events none
+			user-select none
+
+		&-title
+			font-size 18px
+			color $color-highlight
+			margin-top $padding
+
+		&-subtitle
+			font-size 14px
+			color $color-text
+			margin-top 5px
+			text-align center
+
+		&-date
+			font-size 14px
+			color $color-text-light
+			margin-top $padding
+			margin-bottom 12px
+
+	&__about
+		flex-center()
+		flex-direction column
+		margin-top 100px
+
+		&-description
+			font-size 18px
+			color $color-text-light
+			width 450px
+			margin-top $padding
+			text-align center
+			line-break()
+
+	&._loading .nft__item
+		pointer-events none
+
+		&-count, &-name, &-description
+			loading()
+
+		&-name
+			width 160px
+
+		&-description
+			width 120px
+
+		&-logo, &-img img, svg
+			opacity 0
+
+		&-content .ui-button
+			color transparent
+
+		&-logo, &-img img, svg
+			opacity 0
+
+		&-content .ui-button
+			color transparent
+

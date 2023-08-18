@@ -1,0 +1,135 @@
+.layout
+	width 100%
+	min-height 100
+	background-color $color-background-dark
+	display flex
+	justify-content center
+	align-items flex-start
+
+	&__container
+		display flex
+		flex-direction column
+		width 1300px
+
+	&__header
+		width 100%
+		display flex
+		justify-content space-between
+		align-items center
+		margin-top 35px
+		margin-bottom 50px
+
+		&-logo
+			transition opacity $transition
+
+			& img
+				width 70px
+				user-select none
+
+			&:hover
+				opacity .7
+
+			&:active
+				opacity .5
+
+		&-links
+			display flex
+			justify-content flex-end
+			align-items center
+
+		&-social
+			flex-center()
+			height 30px
+			width 30px
+			background-color transparent
+			border 1px solid $color-text
+			border-radius $border-radius-circle
+			transition opacity $transition
+
+			&:not(:last-child)
+				margin-right $padding-small
+
+			&:hover
+				opacity .6
+
+			& path
+				fill $color-text
+
+		&-dropdown
+			width 150px
+
+			& > *
+				width 100%
+
+			& a, & button
+				display flex
+				justify-content flex-start
+				align-items center
+				height 100%
+				width 100%
+
+	&__content
+		min-height 800px
+
+	&__footer
+		position relative
+		width 100%
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		margin-top 100px
+		overflow-y clip
+
+		&-background
+			position absolute
+			top 160px
+			right -8%
+			z-index 1
+			animation $animation-heart
+			pointer-events none
+			user-select none
+
+		&-social
+			display flex
+			flex-direction column
+			justify-content center
+			align-items center
+
+
+		&-subtitle
+			font-size 18px
+			color $color-text-light
+			margin-top 10px
+
+		&-buttons
+			flex-center()
+			margin-top $padding-big
+
+			& .ui-button
+				height 50px
+
+				&:not(:last-child)
+					margin-right $padding
+
+				& path
+					fill $color-background
+
+		&-intro
+			width 100%
+			display flex
+			justify-content space-between
+			align-items center
+			margin 125px 0
+
+		&-logo
+			width 135px
+
+		&-mail
+			font-size 24px
+			color $color-text
+			transition opacity $transition
+
+			&:hover
+				color $color-text
+				opacity .7
